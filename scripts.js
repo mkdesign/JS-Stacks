@@ -1,5 +1,15 @@
 window.onload= function(){
-	var string = prompt("","your string");
-	alert(string);
+	var pushBtn = document.getElementById('push-btn');
+	var popBtn = document.getElementById('pop-btn');
+	var stack = new Array();
+	pushBtn.onclick = function(){
+
+		var str=document.getElementById('str').value;
+
+		stack.unshift(str);
+		alert(stack);
+
+	}
+
 
 }
