@@ -10,6 +10,9 @@ window.onload= function(){
 		alert(stack);
 
 	}
-
+	popBtn.onclick = function(){
+		stack.shift();
+		alert(stack);
+	}
 
 }
